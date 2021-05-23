@@ -1,0 +1,14 @@
+
+.bg{
+    -fx-background-color:#313131;
+    -fx-background-radius:0 30 30 0;
+}
+
+.anchor0{
+    -fx-background-color:linear-gradient(to top,#FFFFFF,#CDCDCD);
+    -fx-background-radius:20;
+}
+.anchor2{
+    -fx-background-color:linear-gradient(to top,#F66E63,#C92A42);
+    -fx-background-radius:20;
+}

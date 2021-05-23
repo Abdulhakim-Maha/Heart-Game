@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="700.0" prefWidth="1400.0" styleClass="bg" stylesheets="@main.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.main.MainController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="839.0" layoutY="237.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="borderPane" stylesheets="@main.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="680.0" prefWidth="100.0" styleClass="borderCenter" stylesheets="@main.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../public/menu/cards_30px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="Home" mnemonicParsing="false" onMouseEntered="#HomeEnter" onMouseExited="#HomeExit" onMousePressed="#HomePress" onMouseReleased="#HomeRelease" prefHeight="70.0" prefWidth="200.0" styleClass="btn-vbox" stylesheets="@main.css" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="LilyUPC" size="39.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/home_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="rules" layoutX="10.0" layoutY="315.0" mnemonicParsing="false" onMouseEntered="#ruleEnter" onMouseExited="#ruleExit" onMousePressed="#rulePress" onMouseReleased="#ruleRelese" prefHeight="70.0" prefWidth="200.0" styleClass="btn-vbox" stylesheets="@main.css" text="Rules" textFill="WHITE">
+                     <font>
+                        <Font name="LilyUPC" size="39.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/rules_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="credit" layoutX="10.0" layoutY="385.0" mnemonicParsing="false" onMouseEntered="#creditEnter" onMouseExited="#creditExit" onMousePressed="#creditPress" onMouseReleased="#creditRelese" prefHeight="70.0" prefWidth="200.0" styleClass="btn-vbox" stylesheets="@main.css" text="Credit" textFill="WHITE">
+                     <font>
+                        <Font name="LilyUPC" size="39.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/crowd_filled_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="quit" layoutX="10.0" layoutY="420.0" mnemonicParsing="false" onMouseEntered="#quitEnter" onMouseExited="#quitExit" onMousePressed="#quitPress" onMouseReleased="#quitRelese" prefHeight="70.0" prefWidth="200.0" styleClass="btn-vbox" stylesheets="@main.css" text=" Quit" textFill="WHITE">
+                     <font>
+                        <Font name="LilyUPC" size="39.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/shutdown_26px.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D minX="-5.0" />
+                           </viewport>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow height="43.87" radius="27.15" width="66.73" />
+               </effect>
+            </VBox>
+         </center>
+         <left>
+            <Pane prefHeight="680.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <StackPane fx:id="scenePane" prefHeight="680.0" prefWidth="900.0" styleClass="stackPane" stylesheets="@main.css">
+               <children>
+                  <ImageView fitHeight="658.0" fitWidth="879.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../../public/menu/3.gif" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="654.0" prefWidth="891.0">
+                     <children>
+                        <Button fx:id="playBtn" layoutX="394.0" layoutY="592.0" mnemonicParsing="false" onAction="#playGame" prefHeight="40.0" prefWidth="120.0" styleClass="playbtn" stylesheets="@main.css" text="Play" textFill="#fedbc5">
+                           <font>
+                              <Font name="Book Antiqua Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <Pane fx:id="inputBoard" layoutX="282.0" layoutY="240.0" prefHeight="200.0" prefWidth="345.0" styleClass="enterName" stylesheets="@main.css">
+                           <children>
+                              <TextField fx:id="playerName" layoutX="93.0" layoutY="88.0" promptText="Enter your name" style="-fx-background-color: #C92941;" />
+                              <Button layoutX="124.0" layoutY="138.0" mnemonicParsing="false" onAction="#startGame" styleClass="startGame" stylesheets="@main.css" text="Start Game" textFill="#dab6b6">
+                                 <effect>
+                                    <DropShadow blurType="GAUSSIAN" height="32.08" radius="13.4775" width="23.83">
+                                       <color>
+                                          <Color red="0.8549019694328308" green="0.7137255072593689" blue="0.7137255072593689" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="12.0" />
+                                 </font></Button>
+                              <Text fx:id="notification" fill="#dab6b6" layoutX="23.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 to 8 characters and No special characters or number" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed" size="20.0" />
+                                 </font></Text>
+                              <Text fill="#dab6b6" layoutX="135.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bodoni MT Condensed" size="20.0" />
+                                 </font></Text>
+                              <Button fx:id="closeInputBoard" layoutX="301.0" layoutY="-1.0" mnemonicParsing="false" onAction="#closeInputBoard" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="39.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../public/menu/minus_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                           </children>
+                           <effect>
+                              <DropShadow height="51.98" radius="21.915" spread="0.13" width="37.68">
+                                 <color>
+                                    <Color red="0.02368421107530594" green="0.02368421107530594" blue="0.02368421107530594" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

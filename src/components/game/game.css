@@ -1,0 +1,40 @@
+.bg{
+  -fx-background-radius:30;
+  -fx-background-color:linear-gradient(to bottom,#EE4540, #C72C41, #801336, #510A32 ,#2D142C);
+}
+.btnHome{
+   -fx-background-radius:50;
+   -fx-background-color:#C92A42;
+}
+.deal{
+   -fx-background-radius:25%;
+   -fx-background-color:linear-gradient(to bottom,#2D9D3B, #68C974, #CDF4D2);
+}
+.swap{
+   -fx-background-radius:50;
+   -fx-background-color:#FEDBC5;
+}
+.scorePane{
+    -fx-background-radius:30;
+    -fx-background-color:linear-gradient(to bottom,#8497B5, #9D98AE, #CB8D9A, #EA9087 ,#ECAF95);
+}
+.closeBtn{
+    -fx-background-color:transparent;
+}
+.scoreBtn{
+    -fx-background-color:#8497B5;
+     -fx-background-radius:15;
+
+}
+
+.endPane{
+     -fx-background-radius:30;
+    -fx-background-color:linear-gradient(to bottom,#C3EBEF, #70C2DF, #7354F4, #3F2DA5 );
+}
+.backToMenu{
+    -fx-background-radius:15;
+    -fx-background-color:#70C2DF;
+}
+.backToMenu:hover{
+    -fx-background-color:#70C2DF;
+}

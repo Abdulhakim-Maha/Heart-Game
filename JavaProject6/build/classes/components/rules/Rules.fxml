@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" styleClass="bg" stylesheets="@rule.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="340.0" prefWidth="900.0">
+               <children>
+                  <AnchorPane prefHeight="340.0" prefWidth="450.0" styleClass="anchor2" stylesheets="@rule.css">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow height="20.0" radius="9.5" spread="0.3" width="20.0">
+                           <color>
+                              <Color red="0.9815789461135864" green="0.13269492983818054" blue="0.13269492983818054" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fill="#cdcdcd" layoutX="12.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ฮาตส์ (อังกฤษ: Hearts) เป็นเกมไพ่ชนิดหนึ่ง ใช้ผู้เล่น 4 คน มีการลงไพ่ครั้งละ 1 ใบ ในแต่ละครั้งใครลงไพ่สูงสุดคือผู้กินไพ่ชุดนั้นไป และมีสิทธิ์เรียกไพ่ในครั้งต่อไป ไพ่บางใบมีแต้ม บางใบไม่มี เมื่อหมดรอบ (13 ครั้ง) ก็จะมีการจดแต้มสะสมไว้จนกว่าจะจบเกม เกมจะจบก็ต่อเมื่อมีผูเล่นคนใดคนหนึ่งมีแต้มเกิน 100 แต้ม ผู้ที่มีแต้มน้อยที่สุดในตอนนั้นถือเป็นผู้ชนะ" textAlignment="CENTER" wrappingWidth="403.9999999999998" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/hearts_64px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="146.0" layoutY="64.0" prefHeight="40.0" prefWidth="132.0" text="Heart" textFill="#cdcdcd">
+                           <font>
+                              <Font name="Felix Titling" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="20.0" prefHeight="340.0" prefWidth="450.0" styleClass="anchor0" stylesheets="@rule.css">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="20.0" radius="9.5" spread="0.21" width="20.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fill="#c92a42" layoutX="6.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="แจกไพ่ทั้งหมด 52 ใบ ให้ผู้เล่น 4 คน คนละ 13 ใบ ก่อนจะลงไพ่ในบางรอบจะมีการแลกไพ่กับผู้เล่นคนอื่น ครั้งละ 3 ใบ โดยในรอบแรกให้ผู้เล่นที่อยู่ทางซ้าย รอบที่สองทางขวา รอบที่สามตรงข้าม รอบที่สี่ไม่มีแลกไพ่ วนไปเรื่อย ๆ จนกว่าจะจบเกม เมื่อแลกไพ่เสร็จผู้ที่มี 2♣ จะเป็นคนเรียกไพ่ก่อนโดยต้องเรียก 2♣ เท่านั้น จากนั้นผู้เล่นคนอื่น ๆ ก็จะลงไพ่ดอกเดียวกับคนเริ่มโดยวนซ้าย ใครลงไพ่สูงสุดก็กินไป (2 เล็กสุด A ใหญ่สุด) และเรียกไพ่ในรอบต่อไป (ถ้าลงไพ่คนละดอกกับผู้เรียกจะไม่มีสิทธิ์กิน)" textAlignment="CENTER" wrappingWidth="403.9999999999998">
+                           <font>
+                              <Font size="15.5" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="193.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/hearts_64px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="152.0" layoutY="64.0" prefHeight="40.0" prefWidth="132.0" text="กติกา" textFill="#c92a42">
+                           <font>
+                              <Font name="Tw Cen MT" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="340.0" prefWidth="900.0">
+               <children>
+                  <AnchorPane prefHeight="340.0" prefWidth="450.0" styleClass="anchor0" stylesheets="@rule.css">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="20.0" radius="9.5" spread="0.21" width="20.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fill="#c92a42" layoutX="8.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ไพ่ที่มีแต้มในเกมฮาตส์มีทั้งหมด 14 ใบ ได้แก่ A♥ 2♥ 3♥ 4♥ 5♥ 6♥ 7♥ 8♥ 9♥ 10♥ J♥ Q♥ K♥ และ Q♠ โดยไพ่โพแดงมีค่าใบละ 1 แต้ม และ Q♠ มีค่า 13 แต้ม ผู้ที่ได้แต้มไปคือผู้ที่กินไพ่เหล่านี้ไป ยกเว้นในกรณีที่มีผู้เล่นคนใดคนหนึ่งกินไพ่มีแต้มได้ทั้งหมดในตาเดียว ผู้เล่นคนนั้นจะไม่ได้แต้ม 26 แต้ม แต่ว่าผู้เล่นคนอื่นๆจะบวกคนละ 26 แต้มแทน เรียกว่า การยิงพระจันทร์ (Shooting the moon)" textAlignment="CENTER" wrappingWidth="403.9999999999998">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="185.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/hearts_64px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="144.0" layoutY="64.0" prefHeight="40.0" prefWidth="132.0" text="ไพ่มีแต้ม" textFill="#c92a42">
+                           <font>
+                              <Font name="Tw Cen MT" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="20.0" prefHeight="340.0" prefWidth="450.0" styleClass="anchor2" stylesheets="@rule.css">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow height="20.0" radius="9.5" spread="0.3" width="20.0">
+                           <color>
+                              <Color red="0.9815789461135864" green="0.13269492983818054" blue="0.13269492983818054" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Text fill="#cdcdcd" layoutX="8.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ห้ามลงไพ่คนละดอกกับผู้เรียกไพ่ ยกเว้นว่าไม่มีไพ่ดอกนั้นอยู่บนมือห้ามลงไพ่มีแต้มในตาแรก ยกเว้นไม่มีไพ่ที่ไม่มีแต้มห้ามเรียกดอกโพแดง ยกเว้นมีคนอื่นเรียกดอกโพแดง หรือว่าบนมือมีแต่ดอกโพแดง จึงจะสามารถเรียกดอกโพแดงได้ (หรือลงตอนที่ไม่มีดอกเหมือนผู้เรียก)" textAlignment="CENTER" wrappingWidth="403.9999999999998">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="185.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../public/menu/hearts_64px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="102.0" layoutY="64.0" prefHeight="40.0" prefWidth="216.0" text="ข้อห้ามในการลงไพ่" textFill="#cdcdcd">
+                           <font>
+                              <Font name="Tw Cen MT" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

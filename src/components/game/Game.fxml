@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" styleClass="bg" stylesheets="@game.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.game.GameController">
+   <children>
+      <Button fx:id="exit" layoutX="1342.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" onMouseEntered="#exitEnter" onMouseExited="#exitOut" onMousePressed="#exitPressed" onMouseReleased="#exitRelease" prefHeight="17.0" prefWidth="38.0" styleClass="btnHome" stylesheets="@game.css">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../public/menu/home_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="deal" layoutX="890.0" layoutY="329.0" mnemonicParsing="false" onAction="#dealCards" onMouseEntered="#dealEnter" onMouseExited="#dealExit" onMousePressed="#dealPressed" onMouseReleased="#dealRelease" prefHeight="45.0" prefWidth="0.0" styleClass="deal" stylesheets="@game.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../public/menu/ace_of_diamonds_filled_50px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="swap" layoutX="664.0" layoutY="316.0" mnemonicParsing="false" onAction="#swapCards" onMouseEntered="#swapEnter" onMouseExited="#swapExit" prefHeight="70.0" prefWidth="70.0" styleClass="swap" stylesheets="@game.css">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../public/menu/Available%20Updates_50px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <HBox alignment="CENTER" layoutX="434.0" layoutY="139.0" prefHeight="70.0" prefWidth="531.0">
+         <children>
+            <Label fx:id="notification" text="Label" textFill="#fffbfb">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Pane fx:id="scoresBoard" layoutX="448.0" layoutY="191.0" prefHeight="318.0" prefWidth="502.0" styleClass="scorePane" stylesheets="@game.css">
+         <children>
+            <Button fx:id="closeScores" layoutX="444.0" layoutY="6.0" mnemonicParsing="false" onAction="#closeScoresBoard" styleClass="closeBtn" stylesheets="@game.css">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../public/menu/cancel_40px.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.27141812443733215" green="0.37122684717178345" blue="0.6236842274665833" />
+                           </color>
+                        </DropShadow>
+                     </effect></ImageView>
+               </graphic></Button>
+            <VBox alignment="CENTER" layoutY="80.0" prefHeight="220.0" prefWidth="502.0">
+               <children>
+                  <Text fx:id="playerScore" fill="#7c5050" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.75" green="0.4930555522441864" blue="0.4930555522441864" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fx:id="bot1Score" fill="#7c5050" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.75" green="0.4930555522441864" blue="0.4930555522441864" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fx:id="bot2Score" fill="#7c5050" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.75" green="0.4930555522441864" blue="0.4930555522441864" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fx:id="bot3Score" fill="#7c5050" fontSmoothingType="LCD" layoutX="233.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Colonna MT" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.75" green="0.4930555522441864" blue="0.4930555522441864" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+               </children>
+            </VBox>
+            <Text fill="#7c5050" fontSmoothingType="LCD" layoutX="195.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORES" textAlignment="CENTER">
+               <font>
+                  <Font name="Colonna MT" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.75" green="0.4930555522441864" blue="0.4930555522441864" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="54.36" radius="24.2975" spread="0.21" width="44.83">
+               <color>
+                  <Color red="0.25526314973831177" green="0.22548244893550873" blue="0.22548244893550873" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Button fx:id="showScores" layoutX="30.0" layoutY="11.0" mnemonicParsing="false" onAction="#openScoresBoard" onMouseEntered="#scoreEnterd" onMouseExited="#scoreExit" prefHeight="17.0" prefWidth="38.0" styleClass="scoreBtn" stylesheets="@game.css">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../public/menu/leaderboard_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.2809210419654846" green="0.41078945994377136" blue="0.4973684251308441" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Pane fx:id="winnerBoard" layoutX="502.0" layoutY="163.0" prefHeight="282.0" prefWidth="394.0" styleClass="endPane" stylesheets="@game.css">
+         <children>
+            <Text fx:id="winnerText" fill="#3f2da5" layoutX="172.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="29.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5027924180030823" green="0.592999279499054" blue="0.7605262994766235" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Text>
+            <Button fx:id="backToMenu" layoutX="127.0" layoutY="152.0" mnemonicParsing="false" onAction="#exit" prefHeight="56.0" prefWidth="141.0" styleClass="backToMenu" stylesheets="@game.css" text="Back To Menu" textFill="#3f2da5">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5027924180030823" green="0.592999279499054" blue="0.7605262994766235" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="29.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7062621712684631" green="0.7763344645500183" blue="0.8973684310913086" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Label layoutX="185.0" layoutY="368.0" prefHeight="38.0" prefWidth="70.0" text="Billy" textFill="#e5dfe2">
+         <font>
+            <Font name="Bodoni MT Black" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4447368383407593" green="0.34837719798088074" blue="0.34837719798088074" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="699.0" layoutY="13.0" prefHeight="38.0" prefWidth="70.0" text="Jane" textFill="#e5dfe2">
+         <font>
+            <Font name="Bodoni MT Black" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4447368383407593" green="0.34837719798088074" blue="0.34837719798088074" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="1237.0" layoutY="367.0" prefHeight="38.0" prefWidth="70.0" text="Mike" textFill="#e5dfe2">
+         <font>
+            <Font name="Bodoni MT Black" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4447368383407593" green="0.34837719798088074" blue="0.34837719798088074" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="53.0" layoutX="126.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../public/menu/player_male_48px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="53.0" layoutX="645.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../public/menu/player_female_48px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="53.0" layoutX="1177.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../public/menu/player_male_48px.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>
